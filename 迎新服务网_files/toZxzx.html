@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://fresh.ahau.edu.cn/yxxt-v5/web/zxzx/toZxzx.zf -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <title>迎新服务网</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="Copyright" content="zfsoft">	
+	<script type="text/javascript">
+		//全局变量
+		var _path = "/yxxt-v5";
+		var _systemPath = "/yxxt-v5";
+		var _stylePath = "/zftal-ui-v5-1.1.1";
+	</script>	
+	<!--jQuery核心框架库 -->
+	<script type="text/javascript" src="./jquery-min.js.下载"></script>
+	<!--jQuery浏览器检测 -->
+	<script type="text/javascript" src="./browse-judge.js.下载"></script>
+	
+	<!--Bootstrap布局框架-->
+<!--Bootstrap布局框架-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.staticfile.org/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="./bootstrap.min.js.下载" charset="utf-8"></script>
+<!--zftal-ui样式-->
+<!--jQuery常用工具扩展库：基础工具,资源加载工具,元素尺寸相关工具 -->
+<script type="text/javascript" src="./jquery.utils.contact-min.js.下载" charset="utf-8"></script>
+<!--jQuery基础工具库：$.browser,$.cookie,$.actual等 -->
+<script type="text/javascript" src="./jquery.plugins.contact-min.js.下载" charset="utf-8"></script>
+<!--jQuery自定义event事件库 -->
+<script type="text/javascript" src="./jquery.events.contact-min.js.下载" charset="utf-8"></script>
+<!--JavaScript对象扩展库：Array,Date,Number,String -->
+<script type="text/javascript" src="./jquery.extends.contact-2.min.js.下载" charset="utf-8"></script>
+<!--国际化js库 -->
+<script type="text/javascript" src="./jquery.i18n-min.js.下载" charset="utf-8"></script>
+<!--业务框架前端脚本国际化库-->
+<script type="text/javascript" src="./jquery.zftal_zh_CN-min.js.下载"></script>
+<!--Bootbox弹窗插件-->
+<script src="./bootbox.concat-min.js.下载" type="text/javascript" charset="utf-8"></script>
+<script src="./zh_CN-min.js.下载" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="./bootbox-min.css">
+<!--jQuery.chosen下拉框美化插件-->
+<link rel="stylesheet" type="text/css" href="./chosen-min.css">
+<script type="text/javascript" src="./jquery.utils.pinyin.min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./jquery.choosen.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./jquery.chosen-additional.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./zh_CN-min.js(1).下载" charset="utf-8"></script>
+<!--IE浏览器html5、CSS3兼容插件-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/html5shiv.min.js?ver=ca2803fc6938611b550677052e3884fb" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/respond.min.js?ver=ca2803fc6938611b550677052e3884fb" charset="utf-8"></script>
+<![endif]-->	<script type="text/javascript" src="./viewer.v0.1.0.js.下载"></script>
+    <link rel="stylesheet" href="./viewer.v0.1.0.css" type="text/css">
+	<script type="text/javascript" src="./area-selection.js.下载" charset="utf-8"></script>
+	<link type="text/css" href="./area-selection.css" rel="stylesheet">	<!--业务框架jQuery全局设置和通用函数库-->
+	<script type="text/javascript" src="./jquery.zftal.contact-min.js.下载"></script>
+	<script type="text/javascript" src="./public-zx.js.下载"></script>
+<!--laydate日期控件-->
+<script type="text/javascript" src="./laydate.js.下载" charset="utf-8"></script><link rel="stylesheet" href="./laydate.css" id="layuicss-laydate">
+<link rel="stylesheet" type="text/css" href="./laydate(1).css">	<script src="./jquery.dragsort.min.js.下载"></script>
+	<style type="text/css">
+		body,html{
+		    height: 100%;
+		    width: 100%;
+		    position: relative;
+		}
+	</style>
+	
+	
+</head>  
+<body class="service-page home-page basic-skin"> 
+	<!-- page content start -->
+    <div class="container" style="min-height:540px">
+	<div class="notice">
+		<div class="panel panel-default index_list margin_t15">
+<!-- 			<div class="panel-heading"> -->
+<!-- 				<span class="pull-left"><img src="/yxxt-v5/img/zzfw/notice_icon.png">在线咨询</span> -->
+<!-- 			</div> -->
+			<div class="panel-body" id="zxzx">
+
+
+<title>迎新系统</title>
+
+<meta name="Copyright" content="zfsoft">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- 强制让文档与设备的宽度保持1：1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<!-- 删除默认的苹果工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- 在web app应用下状态条（屏幕顶部条）的颜色 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- 禁止了把数字转化为拨号链接 -->
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="http://fresh.ahau.edu.cn/yxxt-v5/logo/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://fresh.ahau.edu.cn/yxxt-v5/logo/favicon.ico" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<script type="text/javascript">
+	//全局变量
+	var _path = "/yxxt-v5";
+	var _systemPath = "/yxxt-v5";
+	var _stylePath = "/zftal-ui-v5-1.1.1";
+</script><!--在线咨询个性化样式-->
+<link rel="stylesheet" type="text/css" href="./zxzx-web.css">
+<!--在线咨询个性化脚本-->
+<script src="./zxzx-web.js.下载" type="text/javascript" charset="utf-8"></script>
+<!-- 模板引擎 -->
+<script src="./template-render.js.下载" type="text/javascript" charset="utf-8"></script>
+
+
+	<script src="./web-pagination.js.下载" type="text/javascript" charset="utf-8"></script>
+<script id="no-data-templ" type="text/x-jsrender" data-jsv-tmpl="jsvTmpl">
+<!-- 暂无数 -->
+<div class="nodata">
+	<!--<img src="/yxxt-v5/css/zxzx/images/web/tips_noData.png" />-->
+	<p class="text-danger">暂无数据!</p>
+</div>
+</script>
+	<script id="topic-item-templ" type="text/x-jsrender" data-jsv-tmpl="jsvTmpl">
+	<style type="text/css">
+		.issue > .item > .problem > .left .icon{
+			width:auto;
+		}
+	</style>
+	{{for items}}
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q{{:#index+1}}: </span>{{:zxnr}}&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">{{:zxbkModel['bkmc']}}</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【{{:zxr}}】</span> 提问于 <span class="date">{{:zxsj}}</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">{{:zxhfModel.hfnr}}</p>
+				</div>
+			</div>
+		</div>
+	{{else tmpl="#no-data-templ"}}
+	{{/for}}
+	</script>
+	
+	<script type="text/javascript">
+		$(function(){
+			$('.right-area').trigger('event-loading');
+			var _selected_bkdms = eval(''.split(','));
+			
+			var _get_search_data = function(){
+				var search_val = $.trim($('#zxzx-web-search-box').val());
+				return {
+						'webSearchValue': search_val||'',
+						'webSearchBkdmValue':_selected_bkdms.toString()
+				};
+			};
+			
+			var _load_and_render_topic_data = function(pagination){
+				$('.right-area').trigger('event-loading');
+				var _search_val =  _get_search_data();
+				return $.getJSON($('#topic-data').attr('data-url'),$.extend({}, pagination||{}, _search_val), function(data){
+					if(data['totalResult']<=15){
+						$('#web-pagination').hide();
+					}
+					var topic_item_templ = $.templates("#topic-item-templ");
+					var html = topic_item_templ.render({'items':data['items']}); 
+				    $("#topic-data").empty().prepend(html);
+				    if($.founded(_search_val['webSearchValue'])){
+				    	$("#topic-data").mark(_search_val['webSearchValue'], {
+				    		element:'strong',
+				    		className:'text-highlight',
+				    		separateWordSearch:false,
+				    		each:function(){},
+				    		complete:function(){}
+				    	}); 
+				    }
+				    $('.right-area').trigger('event-loaded');
+				})
+			};
+			
+			//debugger;
+			$.when($.getJSON($('#topic-category').attr('data-url')).done(function(data){
+				$.each(data,function(i,n){
+					var item = $('<div>').addClass('item').on('click',function(event){
+						//$('#topic-category>.item').toggleClass('active');
+						$(this).toggleClass('active');
+						$('#topic').click();
+// 						_load_and_render_topic_data({
+// 							'queryModel.showCount':15,
+// 							'queryModel.currentPage':1
+// 						});
+
+						//需要重新创建分页控件
+						
+						return true;
+					});
+					
+					if($.inArray(n['dm'],_selected_bkdms) >= 0){
+						item.addClass('active');
+					}
+					
+					item.attr('data-dm', n['dm']);
+					item.html(n['mc']);
+					$('#topic-category').append(item);
+				});
+			}), _load_and_render_topic_data({
+				'queryModel.showCount':15,
+				'queryModel.currentPage':1
+			})).done(function(m1,m2){
+				$('#web-pagination').pagination(m2[0]['totalResult'],{
+					items_per_page: 15,
+					callback: function(page, component) {
+						_load_and_render_topic_data({
+							'queryModel.showCount':15,
+							'queryModel.currentPage':page+1
+						});
+						$('#scroll-up-btn').trigger('click');
+					}
+				});
+			}).always(function(){
+				$('.right-area').trigger('event-loaded');
+			});
+		});
+	</script>
+
+
+
+<!-- 	<header id="top"> -->
+<!-- 		<div class="container"> -->
+<!-- 			<p>在线咨询</p> -->
+<!-- 		</div> -->
+<!-- 	</header> -->
+
+	<div class="container zxzx">
+		<div class="search-area clearfix">
+			<div class="search">
+				<i class="glyphicon glyphicon-search"></i> <input type="text" placeholder="请输入查找的内容" id="zxzx-web-search-box"> <i id="zxzx-web-search-box-remove" class="glyphicon glyphicon-remove"></i>
+			</div>
+		</div>
+
+		<div class="content clearfix">
+			<div class="left-area hidden-xs">
+				<div class="item active" id="topic" data-url="/yxxt-v5/zxzx/web/page/topic.zf" data-content="topic-content">
+					全部问题
+					<!-- 					全部问题<span class="number count">(77)</span> -->
+				</div>
+				<div class="item" id="faq" data-url="/yxxt-v5/zxzx/web/page/faq.zf" data-content="faq-content">
+					常见问题
+					<!-- 					常见问题<span class="number count">(77)</span> -->
+				</div>
+				
+				<div class="item" id="my-topic" data-url="/yxxt-v5/zxzx/web/page/auth/my-topic.zf" data-content="my-topic-content">
+					我的提问
+					<!-- 					我的提问<span class="number count">(77)</span> -->
+				</div>
+				
+				<div class="item last" id="askDialog">
+					<div class="question">
+						<span class="icon"><i class="ask"></i></span>我要提问
+					</div>
+				</div>
+				
+			</div>
+			<div class="right-area">
+				<div class="web-loading hidden2"></div>
+				<div class="item active" id="topic-content">
+
+
+	<script src="./web-pagination.js.下载" type="text/javascript" charset="utf-8"></script>
+<script id="no-data-templ" type="text/x-jsrender">
+<!-- 暂无数 -->
+<div class="nodata">
+	<!--<img src="/yxxt-v5/css/zxzx/images/web/tips_noData.png" />-->
+	<p class="text-danger">暂无数据!</p>
+</div>
+</script>
+	<script id="topic-item-templ" type="text/x-jsrender">
+	<style type="text/css">
+		.issue > .item > .problem > .left .icon{
+			width:auto;
+		}
+	</style>
+	{{for items}}
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q{{:#index+1}}: </span>{{:zxnr}}&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">{{:zxbkModel['bkmc']}}</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【{{:zxr}}】</span> 提问于 <span class="date">{{:zxsj}}</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">{{:zxhfModel.hfnr}}</p>
+				</div>
+			</div>
+		</div>
+	{{else tmpl="#no-data-templ"}}
+	{{/for}}
+	</script>
+	
+	<script type="text/javascript">
+		$(function(){
+			$('.right-area').trigger('event-loading');
+			var _selected_bkdms = eval(''.split(','));
+			
+			var _get_search_data = function(){
+				var search_val = $.trim($('#zxzx-web-search-box').val());
+				return {
+						'webSearchValue': search_val||'',
+						'webSearchBkdmValue':_selected_bkdms.toString()
+				};
+			};
+			
+			var _load_and_render_topic_data = function(pagination){
+				$('.right-area').trigger('event-loading');
+				var _search_val =  _get_search_data();
+				return $.getJSON($('#topic-data').attr('data-url'),$.extend({}, pagination||{}, _search_val), function(data){
+					if(data['totalResult']<=15){
+						$('#web-pagination').hide();
+					}
+					var topic_item_templ = $.templates("#topic-item-templ");
+					var html = topic_item_templ.render({'items':data['items']}); 
+				    $("#topic-data").empty().prepend(html);
+				    if($.founded(_search_val['webSearchValue'])){
+				    	$("#topic-data").mark(_search_val['webSearchValue'], {
+				    		element:'strong',
+				    		className:'text-highlight',
+				    		separateWordSearch:false,
+				    		each:function(){},
+				    		complete:function(){}
+				    	}); 
+				    }
+				    $('.right-area').trigger('event-loaded');
+				})
+			};
+			
+			//debugger;
+			$.when($.getJSON($('#topic-category').attr('data-url')).done(function(data){
+				$.each(data,function(i,n){
+					var item = $('<div>').addClass('item').on('click',function(event){
+						//$('#topic-category>.item').toggleClass('active');
+						$(this).toggleClass('active');
+						$('#topic').click();
+// 						_load_and_render_topic_data({
+// 							'queryModel.showCount':15,
+// 							'queryModel.currentPage':1
+// 						});
+
+						//需要重新创建分页控件
+						
+						return true;
+					});
+					
+					if($.inArray(n['dm'],_selected_bkdms) >= 0){
+						item.addClass('active');
+					}
+					
+					item.attr('data-dm', n['dm']);
+					item.html(n['mc']);
+					$('#topic-category').append(item);
+				});
+			}), _load_and_render_topic_data({
+				'queryModel.showCount':15,
+				'queryModel.currentPage':1
+			})).done(function(m1,m2){
+				$('#web-pagination').pagination(m2[0]['totalResult'],{
+					items_per_page: 15,
+					callback: function(page, component) {
+						_load_and_render_topic_data({
+							'queryModel.showCount':15,
+							'queryModel.currentPage':page+1
+						});
+						$('#scroll-up-btn').trigger('click');
+					}
+				});
+			}).always(function(){
+				$('.right-area').trigger('event-loaded');
+			});
+		});
+	</script>
+
+
+	<div class="classify clearfix" id="topic-category" data-url="/yxxt-v5/zxzx/web/zxbk/list/json.zf">
+<!-- 		<div class="item">缴费问题</div> -->
+	<div class="item" data-dm="ea5b51842b22c331f1e747a8c6bfb55c">常见问题</div><div class="item" data-dm="89a6c13867e5f08a38fc2ac717509796">报到情况</div><div class="item" data-dm="cjwt">常见问题</div></div>
+
+	<div class="issue" id="topic-data" data-url="/yxxt-v5/zxzx/web/topic/getTopics/json.zf">
+	<style type="text/css">
+		.issue > .item > .problem > .left .icon{
+			width:auto;
+		}
+	</style>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q1: </span>请假条辅导员说全部审批，为啥好多还显示审批中？&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">常见问题</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-09-29 12:00:36</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">估计你辅导员审批的时候没有选择审核通过，审批的时候有三个选项待审核、审核通过和审核不通过。联系下辅导员。</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q2: </span>老师，因为一些原因，明天（周日）上午才可以到学校，到时候可以进学校吗？&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">报到情况</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-29 16:14:24</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">可以的，从学校南门或公寓门进入。但需要提前联系辅导员报备，辅导员和学院负责老师做好报备。</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q3: </span>老师您好，请问忘记登录密码，怎么找回密码？&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">常见问题</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-29 15:44:48</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">可以联系辅导员重置密码</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q4: </span>老师您好，请问18级学生可以25号返校报到吗？&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">报到情况</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-24 10:25:31</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">同学你好，学校返校规定的日期25日、27、29日都是可以的，其他时间不要返校。18级可以的。</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q5: </span>请问疫情啥时候能结束，我们能在假期回家？？&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">常见问题</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-24 10:09:07</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">希望早点结束，现在还没有定，大家共同努力，一定很快的</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q6: </span>老师你好，我为什么现在还是没有报道信息，我是19级的，10点就要截止了&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">报到情况</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【19720488】</span> 提问于 <span class="date">2020-08-24 08:11:31</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">请联系辅导员和学院是否在返校名单里</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q7: </span>请问家长给进公寓吗&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">常见问题</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-23 22:03:11</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">不行的</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q8: </span>宿舍信息登记错误怎么办&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">常见问题</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-23 21:47:10</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">宿舍信息不用管它，后期在更新。你们无法填写</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q9: </span>老师你好，25号早上最早几点可以进校门呀，我凌晨到合肥，六七点可以进学校吗&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">报到情况</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-23 21:25:35</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">8点开始</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q10: </span>老师您好！我想问下返校当日，陪同人员可以进入校外的公寓吗？在出示安康码，测体温，纸质登记的情况下呢？&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">报到情况</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-23 21:13:05</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">校外人员不能进来的</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q11: </span>您好，请问是必须在北三门或者东门进行报道之后才能进学校公寓吗？进了学校公寓以后还可以再出学校公寓吗？&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">报到情况</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-23 20:21:00</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">必须在北三门或者东门进行报道之后才能进学校公寓。学校公寓和校内可以往返，但不能出学校或公寓
+</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q12: </span>开学后图书馆是开放的，还是需要预约呢&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">常见问题</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-23 19:45:53</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">开放的</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q13: </span>请问外省学生会学校必须要申领安徽的安康码嘛？&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">常见问题</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-23 19:34:56</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">是的，</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q14: </span>请问疫情消失的标准是什么？很多学校封闭14天就可以自由出入了？封闭真的会耽误很多事情&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">常见问题</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-23 19:34:27</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">看安徽省政策。</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="problem clearfix">
+				<div class="left">
+					<span class="number">Q15: </span>在校期间，晨午晚检的需要的温度计是自备还是学校统一发放？&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon">常见问题</span>
+				</div>
+				<div class="right">
+					<span class="quizzer">【匿名】</span> 提问于 <span class="date">2020-08-23 17:06:46</span>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="item">
+					<span class="answerer">【回复】</span>
+					<p style="word-wrap: break-word;word-break: normal;">学校统一发放，前期返校的同学已经发放的，不再重复发放。</p>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<nva id="web-pagination"><ul class="pager"><li class="disabled previous"><a><span aria-hidden="true">←</span>上一页</a></li><li class="active"><a>1</a></li><li><a href="javascript:void(0)">2</a></li><li><a href="javascript:void(0)">3</a></li><li><a href="javascript:void(0)">4</a></li><li><a href="javascript:void(0)">5</a></li><li class="disabled"><a>...</a></li><li><a href="javascript:void(0)">9</a></li><li class="next"><a href="javascript:void(0)">下一页<span aria-hidden="true">→</span></a></li></ul></nva></div>
+				<div class="item" id="faq-content"></div>
+				<div class="item" id="my-topic-content"></div>
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- 移动端按钮 -->
+	<div class="footer-nav hidden-lg hidden-md hidden-sm" mobile-navigator="">
+		<div class="item allQ">
+			<span topic-selected-page="topic">所有问题</span> <i class="triangle-bottomright"></i>
+			<div id="mobile-topic-blocks" class="tier">
+				<div class="item menu sub">
+					<a href="javascript:void(0);" data-page="topic">所有问题</a>
+				</div>
+				<div class="item menu sub">
+					<a href="javascript:void(0);" data-page="faq">常见问题</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item menu myq">
+			<a href="javascript:void(0);" data-page="my-topic">我的提问</a>
+		</div>
+		
+		<div class="item menu myq">
+			<a href="javascript:void(0);" data-page="askDialog">我要提问</a>
+		</div>
+		
+	</div>
+	<!-- 移动端按钮 -->
+
+<!-- 	<div class="footer"> -->
+<!-- 		<div class="container"> -->
+<!-- 			<p>版权所有© Copyright 1999-2017 正方软件股份有限公司 浙ICP备11024936 -->
+<!-- 				中国·杭州市紫霞街176号杭州互联网创新创业园2号楼301</p> -->
+<!-- 		</div> -->
+<!-- 	</div> -->
+
+
+
+</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" charset="utf-8">
+	jQuery(function(){
+		//layout=zxzx-web//有标题
+		//layout=zxzx-web-no-deps//无标题
+		//jQuery("#zxzx").load(_path+"/zxzx/web/page/topic.zf?layout=zxzx-web");
+		jQuery("#zxzx").load(_path+"/zxzx/web/page/topic.zf?layout=zxzx-web-no-deps");
+	});
+	
+	setTimeout(function(){
+		$('.process.container>h3').hide();
+		$('.system-title').text("在线咨询");
+	},200);
+</script>
+   	<!-- page content end -->  
+  
+<!--jQuery.validation -->
+<link rel="stylesheet" type="text/css" href="./jquery.validate-min.css">
+<script type="text/javascript" src="./jquery.validate-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./jquery.validate.contact-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./jquery.validate.methods.contact-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./zh_CN-min.js(2).下载" charset="utf-8"></script>
+<script type="text/javascript">
+	jQuery(function($){
+		$('[data-toggle*="validation"]').trigger("validation");
+	});
+</script><a id="scroll-up-btn" href="http://fresh.ahau.edu.cn/yxxt-v5/web/zxzx/toZxzx.zf#top" style="display: none; position: fixed; z-index: 2147483647;"><i class="fa fa-4x fa-arrow-circle-up"></i></a></body></html>
