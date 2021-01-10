@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://fresh.ahau.edu.cn/yxxt-v5/qj/xsqj/cx.zf -->
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>迎新服务网</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="Copyright" content="zfsoft">
+  <script type="text/javascript">
+    //全局变量
+    var _path = "/yxxt-v5";
+    var _systemPath = "/yxxt-v5";
+    var _stylePath = "/zftal-ui-v5-1.1.1";
+  </script>
+  <!--jQuery核心框架库 -->
+  <script type="text/javascript" src="./jquery-min.js.下载"></script>
+  <!--jQuery浏览器检测 -->
+  <script type="text/javascript" src="./browse-judge.js.下载"></script>
+
+  <!--Bootstrap布局框架-->
+  <link rel="stylesheet" type="text/css" media="screen"
+    href="https://cdn.staticfile.org/ionicons/2.0.1/css/ionicons.min.css">
+  <!--Bootstrap布局框架 暂停使用，已改-->
+  <!--<link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+	<script type="text/javascript" src="./bootstrap.min.js.下载" charset="utf-8"></script>-->
+  <!--zftal-ui样式-->
+  <!--jQuery常用工具扩展库：基础工具,资源加载工具,元素尺寸相关工具 -->
+  <script type="text/javascript" src="./jquery.utils.contact-min.js.下载" charset="utf-8"></script>
+  <!--jQuery基础工具库：$.browser,$.cookie,$.actual等 -->
+  <script type="text/javascript" src="./jquery.plugins.contact-min.js.下载" charset="utf-8"></script>
+  <!--jQuery自定义event事件库 -->
+  <script type="text/javascript" src="./jquery.events.contact-min.js.下载" charset="utf-8"></script>
+  <!--JavaScript对象扩展库：Array,Date,Number,String -->
+  <script type="text/javascript" src="./jquery.extends.contact-2.min.js.下载" charset="utf-8"></script>
+  <!--国际化js库 -->
+  <script type="text/javascript" src="./jquery.i18n-min.js.下载" charset="utf-8"></script>
+  <!--业务框架前端脚本国际化库-->
+  <script type="text/javascript" src="./jquery.zftal_zh_CN-min.js.下载"></script>
+  <!--Bootbox弹窗插件-->
+  <script src="./bootbox.concat-min.js.下载" type="text/javascript" charset="utf-8"></script>
+  <script src="./zh_CN-min.js.下载" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="./bootbox-min.css">
+  <!--jQuery.chosen下拉框美化插件-->
+  <link rel="stylesheet" type="text/css" href="./chosen-min.css">
+  <script type="text/javascript" src="./jquery.utils.pinyin.min.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./jquery.choosen.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./jquery.chosen-additional.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./zh_CN-min.js(1).下载" charset="utf-8"></script>
+  <!--IE浏览器html5、CSS3兼容插件-->
+  <!--[if lt IE 9]>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/html5shiv.min.js?ver=ca2803fc6938611b550677052e3884fb" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/respond.min.js?ver=ca2803fc6938611b550677052e3884fb" charset="utf-8"></script>
+<![endif]-->
+  <script type="text/javascript" src="./viewer.v0.1.0.js.下载"></script>
+  <link rel="stylesheet" href="./viewer.v0.1.0.css" type="text/css">
+  <script type="text/javascript" src="./area-selection.js.下载" charset="utf-8"></script>
+  <link type="text/css" href="./area-selection.css" rel="stylesheet">
+  <!--业务框架jQuery全局设置和通用函数库-->
+  <script type="text/javascript" src="./jquery.zftal.contact-min.js.下载"></script>
+  <script type="text/javascript" src="./public-zx.js.下载"></script>
+  <!--laydate日期控件-->
+  <script type="text/javascript" src="./laydate.js.下载" charset="utf-8"></script>
+  <link rel="stylesheet" href="./laydate.css" id="layuicss-laydate">
+  <link rel="stylesheet" type="text/css" href="./laydate(1).css">
+  <script src="./jquery.dragsort.min.js.下载"></script>
+  <style type="text/css">
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      position: relative;
+    }
+  </style>
+
+  <!--Bootstrap布局框架-->
+  <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+  <script type="text/javascript" src="./bootstrap.min.js.下载" charset="utf-8"></script>
+
+  <style type="text/css">
+    #myTab li:not(.active) a {
+      cursor: pointer;
+    }
+  </style>
+
+
+</head>
+<body class="service-page home-page basic-skin">
+  <!-- page content start -->
+  <ul class="nav nav-tabs" role="tablist" id="myTab">
+    <li class="active"><a link="qjTab" data-toggle="tab"> 请假 </a></li>
+    <li><a link="xjTab" data-toggle="tab"> 销假 </a></li>
+  </ul>
+
+  <div class="formbox" style="min-height:490px; padding: 15px;">
+    <div class="bootstrap-table">
+      <div class="fixed-table-toolbar">
+        <div class="bs-bars pull-left">
+          <div class="row sl_add_btn" id="but_ancd">
+            <div class="col-sm-12">
+              <div class="btn-toolbar" role="toolbar" style="float:right;">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default qj" id="btn_qj_zj">
+                    <i class="icon ion-plus"></i>申请假条
+                  </button>
+                  <a href="./2.html">
+                    <button type="button" class="btn btn-default qj" id="btn_qj_ck">
+                      <i class="icon ion-flag"></i>查看假条
+                    </button>
+                  </a>
+                  <button type="button" class="btn btn-default qj" id="btn_qj_sc">
+                    <i class="icon ion-close"></i>撤回假条
+                  </button>
+                  <button type="button" class="btn btn-default xj" id="btn_xj_ck" style="display: none;">
+                    <i class="icon ion-flag"></i>查看销假假条
+                  </button>
+                  <button type="button" class="btn btn-default xj" id="btn_xj_sc" style="display: none;">
+                    <i class="icon ion-close"></i>撤回销假假条
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns columns-right btn-group pull-right">
+          <button class="btn btn-default" type="button" name="refresh" title="刷新">
+            <i class="icon ion-ios-loop-strong"></i>
+          </button>
+          <button class="btn btn-default" type="button" name="toggle" title="切换">
+            <i class="icon ion-ios-list-outline"></i></button>
+          <div class="keep-open btn-group" title="列">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <i class="icon ion-android-apps"></i> <span class="caret"></span>
+            </button>
+
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <label><input type="checkbox" data-field="qjlxmc" value="1" checked="checked"> 请假类型</label>
+              </li>
+              <li><label><input type="checkbox" data-field="sc" value="2" checked="checked"> 请假时长（小时）</label></li>
+              <li><label><input type="checkbox" data-field="nr" value="3" checked="checked"> 请假事由</label></li>
+              <li><label><input type="checkbox" data-field="kssj" value="4" checked="checked"> 开始时间</label></li>
+              <li><label><input type="checkbox" data-field="jssj" value="5" checked="checked"> 结束时间</label></li>
+              <li><label><input type="checkbox" data-field="fqsj" value="6" checked="checked"> 发起时间</label></li>
+              <li><label><input type="checkbox" data-field="shztmc" value="7" checked="checked"> 处理进度</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="fixed-table-container" style="padding-bottom: 0px;">
+        <div class="fixed-table-header" style="display: none;">
+          <table>
+
+          </table>
+        </div>
+        <div class="fixed-table-body">
+          <div class="fixed-table-loading" style="top: 0px; display: none;">
+            <i class="fa fa-spinner fa-spin fa-2x"></i>载入中...
+          </div>
+          <table id="tabGrid" class="table table-hover table-striped" style="margin-top: 0px;">
+            <thead style="display: none;">
+              <tr>
+                <th class="bs-checkbox " style="width: 36px; " data-field="0" tabindex="0">
+                  <div class="th-inner "><input name="btSelectAll" type="checkbox"></div>
+                  <div class="fht-cell"></div>
+                </th>
+                <th style="" data-field="qjlxmc" tabindex="0">
+                  <div class="th-inner sortable both">请假类型</div>
+                  <div class="fht-cell"></div>
+                </th>
+                <th style="" data-field="sc" tabindex="0">
+                  <div class="th-inner ">请假时长（小时）</div>
+                  <div class="fht-cell"></div>
+                </th>
+                <th style="" data-field="nr" tabindex="0">
+                  <div class="th-inner ">请假事由</div>
+                  <div class="fht-cell"></div>
+                </th>
+                <th style="" data-field="kssj" tabindex="0">
+                  <div class="th-inner sortable both">开始时间</div>
+                  <div class="fht-cell"></div>
+                </th>
+                <th style="" data-field="jssj" tabindex="0">
+                  <div class="th-inner sortable both">结束时间</div>
+                  <div class="fht-cell"></div>
+                </th>
+                <th style="" data-field="fqsj" tabindex="0">
+                  <div class="th-inner sortable both">发起时间</div>
+                  <div class="fht-cell"></div>
+                </th>
+                <th style="" data-field="shztmc" tabindex="0">
+                  <div class="th-inner sortable both">处理进度</div>
+                  <div class="fht-cell"></div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-index="0" data-uniqueid="B203B7DFCBD07827E0532691D572762D">
+                <td colspan="8">
+                  <div class="card-views">
+                    <div class="card-view "><input data-index="0" name="btSelectItem" type="checkbox"></div>
+                    <div class="card-view"><span class="title" style="">请假类型</span><span class="value">事假</span></div>
+                    <div class="card-view"><span class="title" style="">请假时长（小时）</span><span class="value">15</span>
+                    </div>
+                    <div class="card-view"><span class="title" style="">请假事由</span><span class="value">外出采购。</span>
+                    </div>
+                    <script src="./1.js"></script>
+                    <div class="card-view"><span class="title" style="">开始时间</span><span class="value" id="s">2020-10-26
+                        08:00:00</span></div>
+
+                    <div class="card-view"><span class="title" style="">结束时间</span><span class="value" id="e">2020-10-26
+                        23:00:00</span></div>
+                    <div class="card-view"><span class="title" style="">发起时间</span><span class="value" id="a">2020-10-19
+                        10:37:43</span></div>
+
+                    <div class="card-view"><span class="title" style="">处理进度</span><span class="value">审核通过 | <a
+                          href="javascript:void(0);" class="sqxj"
+                          data-id="B203B7DFCBD07827E0532691D572762D"><u>申请销假</u></a></span></div>
+                  </div>
+                </td>
+              </tr>
+              <tr data-index="1" data-uniqueid="B20328B22D216AACE0532691D572ADD6">
+                <td colspan="8">
+                  <div class="card-views">
+                    <div class="card-view "><input data-index="1" name="btSelectItem" type="checkbox"></div>
+                    <div class="card-view"><span class="title" style="">请假类型</span><span class="value">事假</span></div>
+                    <div class="card-view"><span class="title" style="">请假时长（小时）</span><span class="value">6</span>
+                    </div>
+                    <div class="card-view"><span class="title" style="">请假事由</span><span class="value">激活银行卡</span>
+                    </div>
+                    <div class="card-view"><span class="title" style="">开始时间</span><span class="value">2020-10-20
+                        08:00:00</span></div>
+                    <div class="card-view"><span class="title" style="">结束时间</span><span class="value">2020-10-20
+                        14:00:00</span></div>
+                    <div class="card-view"><span class="title" style="">发起时间</span><span class="value">2020-10-17
+                        17:28:11</span></div>
+                    <div class="card-view"><span class="title" style="">处理进度</span><span
+                        class="value">审核通过 （ 已申请销假 ）</span></div>
+                  </div>
+                </td>
+              </tr>
+              <tr data-index="2" data-uniqueid="B054CE2188620FFEE0532691D5721E13">
+                <td colspan="8">
+                  <div class="card-views">
+                    <div class="card-view "><input data-index="2" name="btSelectItem" type="checkbox"></div>
+                    <div class="card-view"><span class="title" style="">请假类型</span><span class="value">其他</span></div>
+                    <div class="card-view"><span class="title" style="">请假时长（小时）</span><span class="value">168</span>
+                    </div>
+                    <div class="card-view"><span class="title" style="">请假事由</span><span
+                        class="value">请假时间：2020年9月30日至2020...</span></div>
+                    <div class="card-view"><span class="title" style="">开始时间</span><span class="value">2020-09-30
+                        16:00:00</span></div>
+                    <div class="card-view"><span class="title" style="">结束时间</span><span class="value">2020-10-07
+                        16:00:00</span></div>
+                    <div class="card-view"><span class="title" style="">发起时间</span><span class="value">2020-09-28
+                        09:13:37</span></div>
+                    <div class="card-view"><span class="title" style="">处理进度</span><span
+                        class="value">审核通过 （ 已申请销假 ）</span></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="fixed-table-footer" style="display: none;">
+          <table>
+            <tbody>
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="fixed-table-pagination" style="display: block;">
+          <div class="pull-left pagination-detail"><span class="pagination-info">显示第 1 到第 3 条记录，总共 3 条记录</span><span
+              class="page-list" style="display: none;">每页显示 <span class="btn-group dropup"><button type="button"
+                  class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"><span
+                    class="page-size">15</span> <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="active"><a href="javascript:void(0)">15</a></li>
+                </ul>
+              </span> 条记录</span></div>
+          <div class="pull-right pagination" style="display: none;">
+            <ul class="pagination">
+              <li class="page-pre"><a href="javascript:void(0)">‹</a></li>
+              <li class="page-number active"><a href="javascript:void(0)">1</a></li>
+              <li class="page-next"><a href="javascript:void(0)">›</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <!--laydate日期控件-->
+  <script type="text/javascript" src="./laydate.js.下载" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="./laydate(1).css">
+  <link rel="stylesheet" type="text/css" href="./bootstrap-table.min.css">
+  <script type="text/javascript" src="./bootstrap-table.min.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./bootstrap-table-zh-CN.min.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./bootstrap-table-cookie.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./bootstrap-table-contextmenu.min.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./bootstrap.table.additional.js.下载" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $(function($) {
+      //搜索按钮查询时禁用
+      bindSearchBtn();
+
+      function bindSearchBtn() {
+        var $btn = arguments[0] == null ? $("button[name='search_button']") : $(arguments[0]);
+        var $tab = arguments[1] == null ? $("#tabGrid") : $(arguments[1]);
+
+        if ($btn.length > 0 && $tab.length > 0) {
+
+          $btn.disabled();
+
+          $(document).off("load-success.bs.table load-error.bs.table", $tab).on("load-success.bs.table load-error.bs.table", $tab, function(e) {
+            $btn.enabled();
+          }).off("refresh.bs.table", $tab).on("refresh.bs.table", $tab, function(e) {
+            $btn.disabled();
+          });
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="./xsqjPaged.js.下载"></script>
+  <script type="text/javascript" src="./xsqj.js.下载"></script>
+  <style type="text/css">
+    .text-left {
+      text-align: left !important;
+    }
+  </style>
+
+  <!-- page content end -->
+
+  <!--jQuery.validation -->
+  <link rel="stylesheet" type="text/css" href="./jquery.validate-min.css">
+  <script type="text/javascript" src="./jquery.validate-min.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./jquery.validate.contact-min.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./jquery.validate.methods.contact-min.js.下载" charset="utf-8"></script>
+  <script type="text/javascript" src="./zh_CN-min.js(2).下载" charset="utf-8"></script>
+  <script type="text/javascript">
+    jQuery(function($) {
+      $('[data-toggle*="validation"]').trigger("validation");
+    });
+  </script>
+  <div class="bootbox modal sl_mod my-modal in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true" name="viewModal" id="viewModal" style="display: block;">
+    <div class="modal-dialog" style="width: 340px;">
+      <div class="modal-content">
+        <div class="modal-header"><input type="hidden" name="focusInput"><button type="button"
+            class="bootbox-close-button btn-sm close bootbox-close" data-dismiss="modal"><span aria-hidden="true"
+              class="fa fa-times"></span><span class="sr-only">Close</span></button>
+          <div class="bootbox-full"><i class="fa fa-expand"></i></div>
+          <h4 class="modal-title">查看假条</h4>
+        </div>
+        <div class="modal-body" style="max-height: 600px; overflow-y: scroll;">
+          <div class="bootbox-body">
+            <form data-toggle="validation" role="form" class="form-horizontal sl_all_form">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label text-right">申请人</label>
+                    <div class="col-sm-8 text-left control-label">田辰北</div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label text-right">请假类型</label>
+                    <div class="col-sm-8 text-left control-label">事假</div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label text-right">请假时间</label>
+                    <div class="col-sm-10 text-left control-label" id="t">2020-10-26 05:00:00 - 2020-10-26
+                      21:00:00 （ 16 小时 ）</div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label text-right">请假事由</label>
+                    <div class="col-sm-10 text-left control-label nr">公务员在校外培训</div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label text-right">审核辅导员</label>
+                    <div class="col-sm-8 text-left control-label"> 王成 </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label text-right">辅导员电话</label>
+                    <div class="col-sm-8 text-left control-label"> 15256912268 </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label text-right">审核结果</label>
+                    <div class="col-sm-8 text-left control-label"><span style="color: #57a300">审核通过</span> </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label text-right">上次审核人</label>
+                    <div class="col-sm-8 text-left control-label">辅导员</div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label text-right">审核备注</label>
+                    <div class="col-sm-10 text-left control-label">审核通过</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--自动更新日期控件-->
+        <!-- <script type="text/javascript">
+          var year = new Date().getFullYear();
+          var month = new Date().getMonth() + 1;
+          var day = new Date().getDate();
+          var ad = new Date().getDate() - 1;
+          if (month < 10) {
+            month = "0" + month;
+          }
+          if (day < 10) {
+            day = "0" + day;
+          }
+          if (ad < 1) {
+            ad = "28"
+            if (month < 2) {
+              am = "12"
+              ay = year - 1
+            } else {
+              am = month - 1
+              ay = year
+            }
+          } else {
+            am = month
+            ay = year
+          }
+
+          if (am < 10) {
+            am = "0" + am;
+          }
+          if (ad < 10) {
+            ad = "0" + ad;
+          }
+
+          var dateString = year + "-" + month + "-" + day;
+          var startString = dateString + " 08:00:00"
+          var endString = dateString + " 23:00:00"
+          var applyTime = ay + "-" + am + "-" + ad + " 20:01:48";
+          var time = startString + " - " + endString + " （15小时）"
+          document.getElementById("s").innerHTML = startString;
+          document.getElementById("e").innerHTML = endString;
+          document.getElementById("a").innerHTML = applyTime;
+          document.getElementById("t").innerHTML = time;
+        </script> -->
+        <script src="./fake-time.js"></script>
+
+        <div class="modal-footer">
+          <a href="./cx.html"><button id="btn_cancel" data-bb-handler="cancel" data-loading-text="关 闭" type="button"
+              class="btn btn-sm btn-default">关 闭</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
